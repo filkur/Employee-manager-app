@@ -14,10 +14,8 @@ export class AppComponent implements OnInit {
   public editEmployee: Employee;
   public deleteEmployee: Employee;
 
-  constructor(private employeeService: EmployeeService) {
-  }
+  constructor(private employeeService: EmployeeService){}
 
-  // tslint:disable-next-line:typedef
   ngOnInit() {
     this.getEmployees();
   }
@@ -110,6 +108,7 @@ export class AppComponent implements OnInit {
     container.appendChild(button);
     button.click();
   }
+
 
 
 }
